@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+    box-sizing: border-box;
+}
+body {
+    background-color: #000;
+    animation: openBody 1.5s linear;
+}
+@keyframes openBody {
+    from {
+        transform: translateY(-500px);
+    } to {
+        transform: translateY(0);
+    }
+}
+
+#changeAuto {
+    display: block;
+    margin: 50px auto 10px;
+    padding: 10px 20px;
+    background-color: #fff;
+    border: none;
+    font-weight: 700;
+    border-radius: 15px;
+    &:hover {
+        background-color: #98e786;
+    }
+}
+
+
+section {
+    width: 100%;
+    margin: 50px auto;
+    height: 120px;
+    background-color: #a2a2b3;
+    position: relative;
+    transform: bendX(180deg);
+    overflow: hidden;
+    border-radius: 40px;
+
+    .mechanism {
+        width: 80px;
+        height: 80px;
+        position: absolute;
+        bottom: 0;
+        border-radius: 50%;
+        
+        .wheel {
+            margin: 0 auto;
+            width: 80px;
+            height: 80px;
+            background-color: #9a9f9f;
+            border-radius: 50%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            border: 12px solid #000;
+        
+            &_partOne {
+                border: 5px solid #000;
+                border-radius: 40px 0 0 0;
+            }
+            &_partTwo {
+                border: 5px solid #000;
+                border-radius: 0 40px 0 0;
+            }
+            &_partThree {
+                border: 5px solid #000;
+                border-radius:  0 0 0 40px;
+            }
+            &_partFour {
+                border: 5px solid #000;
+                border-radius: 0 0 40px 0 ;
+            }
+        }
+    }
+
+    #barrierOne {
+        width: 120px;
+        height: 120px;
+        position: absolute;
+        background-color: #000;
+        bottom: -97px; //bottom 0; height 23px 
+        left: 325px;
+        border-radius: 50%;
+    }
+    #barrierTwo {
+        width: 120px;
+        height: 120px;
+        position: absolute;
+        background-color: #000000;
+        bottom: -97px; //bottom 0; height 23px 
+        left: 614px;
+        border-radius: 50%;
+    }
+    #barrierThree {
+        width: 120px;
+        height: 120px;
+        position: absolute;
+        background-color: #000;
+        bottom: -97px; //bottom 0; height 23px 
+        left: 834px;
+        border-radius: 50%;
+    }
+}
