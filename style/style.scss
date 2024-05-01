@@ -25,16 +25,16 @@ body {
     font-weight: 700;
     border-radius: 15px;
     &:hover {
-        background-color: #98e786;
+        background-color: #f0c967;
     }
 }
 
 
-section {
+.track {
     width: 100%;
     margin: 50px auto;
     height: 120px;
-    background-color: #a2a2b3;
+    background-color: #79d4ed;
     position: relative;
     transform: bendX(180deg);
     overflow: hidden;

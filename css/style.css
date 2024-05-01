@@ -28,27 +28,27 @@ body {
   border-radius: 15px;
 }
 #changeAuto:hover {
-  background-color: #98e786;
+  background-color: #f0c967;
 }
 
-section {
+.track {
   width: 100%;
   margin: 50px auto;
   height: 120px;
-  background-color: #a2a2b3;
+  background-color: #79d4ed;
   position: relative;
   transform: bendX(180deg);
   overflow: hidden;
   border-radius: 40px;
 }
-section .mechanism {
+.track .mechanism {
   width: 80px;
   height: 80px;
   position: absolute;
   bottom: 0;
   border-radius: 50%;
 }
-section .mechanism .wheel {
+.track .mechanism .wheel {
   margin: 0 auto;
   width: 80px;
   height: 80px;
@@ -58,23 +58,23 @@ section .mechanism .wheel {
   grid-template-columns: 1fr 1fr;
   border: 12px solid #000;
 }
-section .mechanism .wheel_partOne {
+.track .mechanism .wheel_partOne {
   border: 5px solid #000;
   border-radius: 40px 0 0 0;
 }
-section .mechanism .wheel_partTwo {
+.track .mechanism .wheel_partTwo {
   border: 5px solid #000;
   border-radius: 0 40px 0 0;
 }
-section .mechanism .wheel_partThree {
+.track .mechanism .wheel_partThree {
   border: 5px solid #000;
   border-radius: 0 0 0 40px;
 }
-section .mechanism .wheel_partFour {
+.track .mechanism .wheel_partFour {
   border: 5px solid #000;
   border-radius: 0 0 40px 0;
 }
-section #barrierOne {
+.track #barrierOne {
   width: 120px;
   height: 120px;
   position: absolute;
@@ -83,7 +83,7 @@ section #barrierOne {
   left: 325px;
   border-radius: 50%;
 }
-section #barrierTwo {
+.track #barrierTwo {
   width: 120px;
   height: 120px;
   position: absolute;
@@ -92,7 +92,7 @@ section #barrierTwo {
   left: 614px;
   border-radius: 50%;
 }
-section #barrierThree {
+.track #barrierThree {
   width: 120px;
   height: 120px;
   position: absolute;
